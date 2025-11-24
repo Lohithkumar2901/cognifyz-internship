@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Validation</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/client.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+
+        <form action="/register" method="POST" id="registerForm">
+            <input type="text" name="username" placeholder="Username" required>
+            
+            <input type="email" name="email" placeholder="Email" required>
+            
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <p id="strengthMsg"></p>
+
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <p id="matchMsg"></p>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
