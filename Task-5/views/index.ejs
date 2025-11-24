@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REST API + UI</title>
+  <script defer src="/script.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>User Manager - CRUD API</h1>
+  
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+  <button onclick="addUser()">Add User</button>
+
+  <h2>User List</h2>
+  <table border="1">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+  </table>
+</body>
+</html>
